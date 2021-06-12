@@ -1,0 +1,42 @@
+<div class="masthead">
+    <div class="row">
+        <div class="col-md-7">
+            <h1>Author
+                <p class="lead"></p>
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row">
+                        <br>
+                        <div class="col-md-2 col-sm-3 text-center">
+                            <a class="story-title" href="#"><img alt="" src="" style="width:100px;height:100px"
+                                    class="img-circle"></a>
+                        </div>
+                        <div class="col-md-10 col-sm-9">
+                            <h3>{{author.author}}</h3>
+                            <div class="row">
+                                <div class="col-xs-9">
+                                    <h4> &nbsp;<span class="label label-default">{{author.title}}</span></h4>
+                                    <small style="font-family:courier,'new courier';"
+                                        class="text-muted">&nbsp;&nbsp;{{author.genre}} </small>
+                                </div>
+                                <small style="font-family:courier,'new courier';"
+                                    class="text-muted">&nbsp;&nbsp;{{author.desc
+                                    }} </small>
+                                <div class="col-xs-3"></div>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary pull-right btnNext" (click)="goBack()"> <i
+                            class="glyphicon glyphicon-chevron-left"> Back</i></a>
+                    <hr>

@@ -1,0 +1,22 @@
+
+#mark{
+    color: rgb(245, 233, 233);
+    font: 1em Cursive;
+}
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+h1{
+    color: darkblue;
+}
+#bg {
+    /* The image used */
+   
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    color: rgb(0, 0, 0);
+    background-size: 100% ;  
+    background-size: cover; 
+  }

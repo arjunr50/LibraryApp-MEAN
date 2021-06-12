@@ -1,0 +1,44 @@
+<div class="masthead">
+    <div class="row">
+        <div class="col-md-7">
+            <br>
+            <h1>Add Author
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel-form3">
+                <div class="panel-body">
+                    <div class="form-body">
+                        <div class="">
+                            <h3>Add new Author</h3>
+                        </div>
+                        <form (ngSubmit)="addAuthor()">
+
+                            <input type="text" id="author" placeholder="Enter Author Name" class="form-control"
+                                name="author" [(ngModel)]="author.author" required><br>
+
+
+                            <input type="text" id="title" placeholder="Enter Author's Famous Book" class="form-control"
+                                name="title" [(ngModel)]="author.title" required><br>
+
+                            <input type="text" id="genre" placeholder="Enter Genre" class="form-control" name="genre"
+                                [(ngModel)]="author.genre" required><br>
+
+                            <input type="text" id="desc" placeholder="Enter Description" class="form-control"
+                                name="desc" [(ngModel)]="author.desc" required><br>
+                            <input type="text" id="link" placeholder="Enter Reference Link " class="form-control"
+                                name="link" [(ngModel)]="author.link" required><br>
+
+                            <input type="text" id="image" placeholder="Enter Image Link " class="form-control"
+                                name="image" [(ngModel)]="author.image" required><br><br>
+
+                            <input type="submit" value="Add Author" class="btn btn-dark">
+                        </form>
+                    </div>

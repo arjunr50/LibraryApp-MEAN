@@ -1,0 +1,60 @@
+<div class="masthead">
+  <div class="row">
+    <div class="col-md-7">
+      <h1>Authors
+        <p class="lead"></p>
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <div class="panel-form3">
+        <div class="panel-body">
+
+
+
+          <!--/stories-->
+
+          <div class="form-body">
+            <h3> Update Author</h3> <br>
+            <form (ngSubmit)="editAuthor()">
+
+
+              <input type="text" id="author" [value]="author.author" class="form-control" name="author"
+                [(ngModel)]="author.author">
+              <br>
+              <br>
+              <input type="text" id="title" value="{{author.title}}" class="form-control" name="title"
+                [(ngModel)]="author.title">
+              <br>
+              <br>
+              <input type="text" id="genre" value="{{author.genre}}" class="form-control" name="genre"
+                [(ngModel)]="author.genre">
+              <br>
+              <br>
+              <input type="text" id="link" value="{{author.link}}" class="form-control" name="link"
+                [(ngModel)]="author.link">
+              <br>
+              <br>
+              <input type="text" id="desc" value="{{author.desc}}" class="form-control" name="desc"
+                [(ngModel)]="author.desc">
+              <br>
+              <br>
+              <input type="text" id="image" value="{{author.image}}" class="form-control" name="image"> <br>
+              <img src="{{author.image}}" style="width:100px;height: 100px;">
+              <br> <br>
+              <input type="submit" value="Update Author" class="btn btn-dark">
+            </form>
+          </div>
+          <!--/stories-->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

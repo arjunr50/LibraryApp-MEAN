@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-bright bg-dark">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav navbar-right">
+      <a class="nav-link" routerLink="#" routerLinkActive="active">LIBRARY</a>
+      <a class="nav-link" routerLink="/index" *ngIf="!_auth.loggedIn()" routerLinkActive="active">HOME</a>
+      <a class="nav-link" routerLink="/login" *ngIf="!_auth.loggedIn()" routerLinkActive="active">LOGIN</a>
+      <a class="nav-link" routerLink="/books" *ngIf="_auth.loggedIn()" routerLinkActive="active">Books</a>
+      <a class="nav-link" routerLink="/authors" *ngIf="_auth.loggedIn()" routerLinkActive="active">Authors</a>
+      <a class="nav-link" routerLink="/addBook" *ngIf="_auth.loggedIn()" routerLinkActive="active">Add Book</a>
+      <a class="nav-link" routerLink="/addAuthor" *ngIf="_auth.loggedIn()" routerLinkActive="active">Add Authors</a>
+      <a class="nav-link" routerLink="/userRegister" *ngIf="!_auth.loggedIn()" routerLinkActive="active">SIGNUP</a>
+
+
+      <a class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()" (click)="logoutUser()">Logout</a>
+    </ul>
+  </div>
+</nav>
+<div id="bg" class="container">
+  <router-outlet></router-outlet>
+</div>

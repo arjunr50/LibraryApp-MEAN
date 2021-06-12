@@ -1,0 +1,52 @@
+<div add-class="noscroll" to="body">
+    <div class="masthead">
+        <div class="row">
+            <div class="col-md-7">
+                <br>
+                <h1>Books
+                    <p class="lead"></p>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="panel-form3">
+                    <div class="panel-body">
+                        <div class="form-body">
+                            <div class="">
+                                <h3>Add new Book</h3>
+                            </div>
+                            <form (ngSubmit)="addBook()">
+
+                                <input type="text" id="title" placeholder="Enter Book Name" class="form-control"
+                                    name="title" [(ngModel)]="book.title" required>
+                                <br>
+
+                                <input type="text" id="author" placeholder="Enter Author Name" class="form-control"
+                                    name="author" [(ngModel)]="book.author" required>
+                                <br>
+
+                                <input type="text" id="genre" placeholder="Enter Genre" class="form-control"
+                                    name="genre" [(ngModel)]="book.genre" required>
+                                <br>
+                                <input type="text" id="link" placeholder="Enter Reference Link" class="form-control"
+                                    name="link" [(ngModel)]="book.link" required>
+                                <br>
+                                <input type="text" id="blurb" placeholder="Enter Blurb" class="form-control"
+                                    name="blurb" [(ngModel)]="book.blurb" required>
+                                <br>
+
+
+                                <!-- <input type="file" id="image" name="image" [(ngModel)]="book.image" required> -->
+                                <input type="text" id="image" placeholder="Enter Image URL" name="image"
+                                    class="form-control" [(ngModel)]="book.image" required>
+                                <br><br>
+                                <input type="submit" value="Add Book" class="btn btn-dark">
+                            </form>
+                        </div>
+                    </div>
